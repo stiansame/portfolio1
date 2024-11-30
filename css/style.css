@@ -17,23 +17,19 @@
 html {
     margin: 0 auto;
     font-size: 16px;
-    /*     background-color: var(--menu-bg);
-    background: linear-gradient(#ffffff 0%, #f8d4f2 75%);
-    background-size: cover;
-    min-height: 100dvh; */
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
-    color: #121212;
+    color: var(--default-color);
 }
 
 a {
-    color: var(--url-default-color);
+    color: var(--default-color);
 }
 
 body {
     background: var(--bg-color);
     margin: 0 auto;
-    padding: 0 1 rem;
+    padding: 1rem;
     max-width: 1200px;
     display: grid;
     justify-self: center;
@@ -80,7 +76,15 @@ ul {
 
     a:hover,
     a:active {
-        color: #ee3842
+        color: var(--accent1);
+    }
+
+    .strike {
+        text-decoration: line-through var(--accent1);
+    }
+
+    .strike:hover {
+        text-decoration: line-through var(--default-color);
     }
 }
 
@@ -96,19 +100,29 @@ ul {
     background-size: contain;
     background-position: center;
     width: 110%;
-
-
 }
 
 .home-img {
-
+    display: grid;
     margin-left: -8rem;
-    overflow-x: hidden;
+    background: url(../assets/images/rostad_profile.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 40vh;
+    opacity: 1;
+    transition: 1s;
+}
+
+.home-img:hover {
+    opacity: .3;
+    filter: blur(.2rem);
+
+
+
 }
 
 .home-content {
 
-    padding: 1rem;
     z-index: 1;
 
     h1 {
@@ -118,10 +132,54 @@ ul {
 
     h3 {
         font-size: clamp(1.8rem, 2vw, 3.5rem);
-        color: var(--header1);
+        color: var(--accent1);
     }
 
     p {
         font-size: clamp(1rem, 1.5vw, 2rem);
+
+
     }
+}
+
+.some {
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    bottom: 4rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.some a {
+    position: relative;
+    display: inline-flex;
+    background: transparent;
+    border: var(--accent1) 2px solid;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--accent1);
+    padding: .4rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.some a:hover {
+    color: var(--bg-color);
+}
+
+.some a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--accent1);
+    z-index: -1;
+    transition: .5s;
+}
+
+.some a:hover::before {
+    width: 100%;
 }
