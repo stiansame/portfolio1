@@ -125,3 +125,32 @@
     font-weight: 900;
     font-style: italic;
 }
+
+
+/*---FONT SIZING---*/
+
+h1 {
+    font-size: clamp(3rem, 3vw, 5.5rem);
+
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: var(--default-color);
+}
+
+h2 {
+    font-size: clamp(1.9rem, 2.1vw, 3.7rem);
+    color: var(--accent1);
+}
+
+
+p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
+
+}
+
+.portfolio-container p {
+    font-size: clamp(1rem, 1vw, 1.3rem);
+}
