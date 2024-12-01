@@ -41,11 +41,12 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem;
-    background: transparent;
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-content: center;
     z-index: 100;
+    position: fixed;
 }
 
 ul {
@@ -88,12 +89,17 @@ ul {
     }
 }
 
+.contact,
+.portfolio,
 .home {
     display: grid;
     align-items: center;
     height: 100vh;
-    grid-template-columns: repeat(2, 1fr);
 
+}
+
+.home {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .home-img img {
@@ -132,14 +138,20 @@ ul {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
+    z-index: 10;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-container a,
 .some a {
     position: relative;
     display: inline-flex;
     background: var(--bg-color);
     border: var(--accent1) 2px solid;
-    border-radius: 50%;
     text-decoration: none;
     color: var(--accent1);
     padding: .4rem;
@@ -148,10 +160,25 @@ ul {
     transition: .5s;
 }
 
+.some a {
+    border-radius: 50%;
+}
+
+.btn-container a {
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    width: 30%;
+}
+
+.btn-container a:hover,
 .some a:hover {
     color: var(--bg-color);
 }
 
+.btn-container a::before,
 .some a::before {
     content: "";
     position: absolute;
@@ -164,6 +191,7 @@ ul {
     transition: .5s;
 }
 
+.btn-container a:hover::before,
 .some a:hover::before {
     width: 100%;
 }
