@@ -163,8 +163,20 @@ p {
 
 }
 
+button,
 .btn-container a {
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-weight: bolder;
     font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.portfolio h2,
+.contact h2 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+label {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: larger;
 }
