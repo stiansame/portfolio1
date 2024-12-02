@@ -229,14 +229,15 @@ button:hover:before,
 
 .project-container {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    flex: 1 1 20rem;
-    min-width: 20rem;
+    flex: 1 1 15rem;
+    min-width: 15rem;
     max-width: 1fr;
     border-radius: 1rem;
     overflow: hidden;
     padding: 1rem;
     height: fit-content;
 }
+
 
 .portfolio-container img {
     height: 100%;

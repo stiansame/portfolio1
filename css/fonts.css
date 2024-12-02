@@ -155,10 +155,13 @@ p {
 
     h3 {
         font-size: large;
+        min-height: 2lh;
+
     }
 
     p {
         font-size: 1rem;
+        min-height: 6lh;
     }
 
 }
