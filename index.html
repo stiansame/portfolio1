@@ -90,8 +90,6 @@
         <h2>contact me</h2>
         <div class="form-container">
             <form id="contactForm">
-                <div id="errorContainer" style="color: red;"></div>
-
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -112,11 +110,13 @@
                     <textarea id="message" name="message" required></textarea>
                 </div>
 
-                <div>
+                <div class="btn-container">
                     <button type="submit">Send</button>
                     <button type="button" id="clearForm">Clear Form</button>
                 </div>
-            </form>
+        </div>
+        </form>
+        <div id="errorContainer"></div>
         </div>
     </section>
     <div class="some">

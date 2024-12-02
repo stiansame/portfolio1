@@ -1,0 +1,31 @@
+.form-container {
+    display: grid;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 50%;
+    min-width: 20rem;
+}
+
+textarea,
+input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background-color: var(--accent1);
+    background-color: hsla(0, 0%, 0%, 0.05);
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    field-sizing: content;
+    min-height: 5rem;
+    line-height: 1.2;
+}
+
+#contactForm {
+    display: grid;
+}

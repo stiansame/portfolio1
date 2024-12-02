@@ -1,6 +1,7 @@
 /*---IMPORTS---*/
 @import url(./fonts.css);
 @import url(./variables.css);
+@import url(./forms.css);
 
 
 /*--- UNIVERSAL---*/
@@ -136,13 +137,9 @@ ul {
 .home-img:hover {
     opacity: .3;
     filter: blur(.2rem);
-
-
-
 }
 
 .home-content {
-
     z-index: 1;
 }
 
@@ -216,6 +213,7 @@ ul {
     flex-wrap: wrap;
     padding: 1rem;
 }
+
 
 .project-container {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
