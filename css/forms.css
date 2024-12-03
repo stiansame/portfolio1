@@ -1,0 +1,48 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    min-width: 20rem;
+    max-width: 600px;
+
+}
+
+textarea,
+input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--accent1);
+    background-color: hsla(0, 0%, 0%, 0.03);
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    field-sizing: content;
+    min-height: 5rem;
+    line-height: 1.2;
+}
+
+#contactForm {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+textarea:focus,
+input:focus {
+    background-color: rgba(238, 65, 56, 0.15);
+    outline: none;
+    caret-color: var(--accent1);
+}
+
+#errorContainer p {
+    font-size: clamp(.5rem, .9vh, 1rem);
+    color: var(--accent1);
+    font-style: italic;
+}
