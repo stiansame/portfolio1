@@ -44,6 +44,4 @@ input:focus {
     font-size: clamp(.5rem, .9vh, 1rem);
     color: var(--accent1);
     font-style: italic;
-
-
 }

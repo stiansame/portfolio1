@@ -103,6 +103,17 @@ ul {
     }
 }
 
+
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px;
+    left: -9999px;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
 .contact,
 .portfolio,
 .home {
@@ -280,6 +291,69 @@ button:hover:before,
         grid-area: 1/1/2/2;
         background-size: contain;
         background-position: center -2.5rem;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar {
+        display: grid;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: all 0.4s ease-in-out;
+        opacity: .9;
+
+    }
+
+    .nav-toggle:checked~nav {
+        transform: scale(1, 1);
+    }
+
+    .nav-toggle:checked~nav a {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out 0.25s;
+    }
+
+    .nav-toggle:checked~.nav-toggle-label i:last-child {
+        display: block;
+    }
+
+    .nav-toggle:checked~.nav-toggle-label i:first-child {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: var(--accent1);
+    }
+
+    .nav-toggle-label:hover {
+        cursor: pointer;
+    }
+
+    .nav-toggle-label i:last-child {
+        display: none;
+    }
+
+    nav ul,
+    nav li {
+        display: block;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
 
     }
 }

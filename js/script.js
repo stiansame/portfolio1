@@ -135,3 +135,22 @@ form.addEventListener("submit", function (event) {
 		);
 	}
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+	const navToggle = document.querySelector(".nav-toggle");
+	const navToggleLabel = document.querySelector(".nav-toggle-label");
+	const navLinks = document.querySelectorAll(".navbar li a");
+
+	// Toggle navigation on label click
+	navToggleLabel.addEventListener("click", (event) => {
+		navToggle.checked = !navToggle.checked;
+		event.preventDefault();
+	});
+
+	// Close navigation when a link is clicked
+	navLinks.forEach((link) => {
+		link.addEventListener("click", () => {
+			navToggle.checked = false;
+		});
+	});
+});
