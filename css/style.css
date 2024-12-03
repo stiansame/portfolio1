@@ -161,7 +161,7 @@ ul {
 }
 
 .some {
-    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 2.5rem);
     bottom: 4rem;
     position: fixed;
     bottom: 3rem;
@@ -354,6 +354,14 @@ button:hover:before,
         padding-left: 1rem;
         font-size: 1.5rem;
         line-height: 2rem;
-
     }
+
+    .some {
+        right: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+
 }
