@@ -96,6 +96,7 @@ ul {
 
     .strike {
         text-decoration: line-through var(--accent1);
+        -webkit-text-decoration-line: line-through var(--accent1);
     }
 
     .strike:hover {
