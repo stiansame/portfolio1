@@ -3,6 +3,7 @@
 @import url(./variables.css);
 @import url(./forms.css);
 @import url(./darkMode.css);
+@import url(./toggleswitch.css);
 
 
 /*--- UNIVERSAL---*/
@@ -39,6 +40,11 @@ body {
     }
 }
 
+.siteName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 main {
     max-width: 1200px;
@@ -74,6 +80,7 @@ ul {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
 }
 

@@ -65,3 +65,15 @@
         color: var(--accent2);
     }
 }
+
+@media screen and (max-width:600px) {
+    .darkMode {
+        .navbar {
+            background: var(--default-color);
+        }
+
+        .nav-toggle-label {
+            color: var(--accent2);
+        }
+    }
+}

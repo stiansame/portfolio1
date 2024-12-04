@@ -1,0 +1,37 @@
+#toggleSwitch {
+  --s: 1rem;
+  /* adjust this to control the size*/
+
+  height: var(--s);
+  aspect-ratio: 2.5;
+  width: auto;
+  /* some browsers need this */
+  border-radius: var(--s);
+  padding: calc(var(--s)/10);
+  margin: calc(var(--s)/2);
+  cursor: pointer;
+  background:
+    radial-gradient(farthest-side, #15202a 96%, #0000) var(--_p, 0%)/var(--s) content-box no-repeat,
+    var(--_c, var(--accent2));
+  box-sizing: content-box;
+  transform-origin: calc(3*var(--s)/5) 50%;
+  transition: transform cubic-bezier(0, 300, 1, 300) .5s, background .3s .1s ease-in;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#toggleSwitch:checked {
+  --_c: var(--accent1);
+  --_p: 100%;
+  transform-origin: calc(100% - 3*var(--s)/5) 50%;
+  transform: rotate(0.1deg);
+}
+
+.modeToggle {
+  position: fixed;
+  bottom: 3rem;
+  left: 1rem;
+  z-index: 1000;
+
+}
