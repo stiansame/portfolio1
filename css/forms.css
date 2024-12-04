@@ -15,7 +15,6 @@ input {
     font-style: normal;
     font-size: 1.1rem;
     border: none;
-    background-color: var(--accent1);
     background-color: hsla(0, 0%, 0%, 0.03);
     padding: .5rem 1rem;
     width: 100%;
@@ -42,7 +41,7 @@ input:focus {
 }
 
 #errorContainer p {
-    font-size: clamp(.5rem, .9vh, 1rem);
+    font-size: clamp(.5rem, 8vh, .8rem);
     color: var(--accent1);
     font-style: italic;
 }

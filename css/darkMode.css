@@ -1,0 +1,67 @@
+.darkMode {
+    background: var(--default-color);
+    color: var(--bg-color);
+
+    h2 {
+        color: var(--accent2);
+    }
+
+    a {
+        color: var(--bg-color);
+    }
+
+    .navbar a:hover {
+        color: var(--accent2);
+    }
+
+    .navbar .strike {
+        text-decoration: line-through var(--accent2);
+        -webkit-text-decoration: line-through var(--accent2);
+    }
+
+    .navbar .strike:hover {
+        text-decoration: line-through var(--bg-color);
+    }
+
+    button,
+    .btn-container a,
+    .some a {
+        background: var(--default-color);
+        border: var(--accent2) 2px solid;
+        color: var(--accent2);
+    }
+
+    button:hover,
+    .btn-container a:hover,
+    .some a:hover {
+        color: var(--default-color);
+    }
+
+    button::before,
+    .btn-container a::before,
+    .some a::before {
+        background: var(--accent2);
+
+    }
+
+    .project-container {
+        border: 1px solid var(--accent2);
+    }
+
+    textarea,
+    input {
+        background-color: hsla(0, 0%, 100%, 0.03);
+        color: var(--bg-color);
+    }
+
+    textarea:focus,
+    input:focus {
+        background-color: rgba(0, 183, 255, 0.15);
+        color: var(--bg-color);
+        caret-color: var(--accent2);
+    }
+
+    #errorContainer p {
+        color: var(--accent2);
+    }
+}
