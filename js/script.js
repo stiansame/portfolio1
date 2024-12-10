@@ -167,7 +167,7 @@ form.addEventListener("submit", async function (event) {
 
       // Send email using EmailJS
       const response = await emailjs.send(
-        "service_eiksqit",
+        "service_lrazpcg",
         "contact_form",
         templateParams
       );
