@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Initialize EmailJS (Replace with your actual EmailJS user ID)
+// Initialize EmailJS
 (function () {
   emailjs.init("VgU2h-mlj0KsKHZkv");
 })();
