@@ -64,6 +64,10 @@
     #errorContainer p {
         color: var(--accent2);
     }
+
+    header {
+        background-color: var(--default-color);
+    }
 }
 
 @media screen and (max-width:600px) {
