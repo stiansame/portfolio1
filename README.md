@@ -2,10 +2,10 @@
 
 ![image](https://github.com/stiansame/portfolio1/blob/main/assets/images/portfolio.jpg?raw=true)
 
-##Goal
+## Goal
 As a developer, you will have to maintain a level of professionalism. This extends past writing code. We need to document our apps so that other developers can run the code without any issues. We also need to keep a professional-looking portfolio so that others have confidence in us and the work that we do.
 
-##Brief
+## Brief
 In this assignment, you will be documenting three prior submissions from the first year:
 Your cross-course project
 Semester Project 1
@@ -24,7 +24,7 @@ a description,
 a screenshot of how the project looks when running,
 a link to the GitHub repo and a live site if it is online.
 
-##Description
+## Description
 
 Simple one-pager for displaying portfolio as described i brief.
 
@@ -50,7 +50,7 @@ Functionality:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:stiansame/project-exam-1-stiansame.git
+git clone git@github.com:stiansame/portfolio1.git
 ```
 
 
