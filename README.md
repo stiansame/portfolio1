@@ -37,7 +37,7 @@ git clone git@github.com:stiansame/project-exam-1-stiansame.git
 
 Just a simple one-pager.
 
-####Contactform
+<b>Contactform</b>
 Using emailJS, so you will need to register your own account if you want to use it the same way I have.
 smtp service by AMS (SES), so again, you will need to register your own account ift you want to build this the same way I have.
 
