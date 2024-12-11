@@ -32,7 +32,7 @@ jobs:
           # will put all file under this path
           local_path: ./* # default is ./*
           # files will copy to under remote_path
-          remote_path: /home/6/s/stianrostad/
+          remote_path: /var/www
           
           # sftp args
           args: '-o ConnectTimeout=5'
