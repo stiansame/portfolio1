@@ -154,7 +154,7 @@ form.addEventListener("submit", async function (event) {
 			};
 
 			// Send email using EmailJS
-			const response = await emailjs.send("service_dqhkxw7", "contact_form", templateParams);
+			const response = await emailjs.send("service_0guyzg9", "contact_form", templateParams);
 
 			// Success message
 			displayMessage("Message sent successfully!", true);
