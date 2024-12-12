@@ -58,9 +58,9 @@ git clone git@github.com:stiansame/portfolio1.git
 
 Just a simple one-pager.
 
-<b>Contactform</b>
+<b>Contactform</b><p></p>
 Using emailJS, so you will need to register your own account if you want to use it the same way I have.
-smtp service by AMS (SES), so again, you will need to register your own account ift you want to build this the same way I have.
+SMTP service by Mailjet, so again, you will need to register your own account ift you want to build this the same way I have.
 
 ## Contributing
 
