@@ -68,7 +68,7 @@ Personal school project, so any and all contribution discouraged. Feel free to c
 
 ## Contact
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/stian-rostad-99a90750/)
 [My facebook page](https://www.facebook.com/stian.a.rostad)
 
 ## License
